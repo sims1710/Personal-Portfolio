@@ -1,0 +1,120 @@
+[
+	{
+		"title": "Project 1",
+		"description": "This is the first project description.",
+		"technologies": [
+			"HTML",
+			"CSS",
+			"JavaScript"
+		],
+		"image": "path/to/project1-image.jpg",
+		"video": "path/to/project1-video.mp4",
+		"link": "https://www.example.com/project1"
+	},
+	{
+		"title": "Project 2",
+		"description": "This is the second project description.",
+		"technologies": [
+			"React",
+			"Node.js",
+			"MongoDB"
+		],
+		"image": "path/to/project2-image.jpg",
+		"video": "path/to/project2-video.mp4",
+		"link": "https://www.example.com/project2"
+	},
+
+    {
+		"title": "Project 3",
+		"description": "This is the third project description.",
+		"technologies": [
+			"AD",
+			"NoFde.js",
+			"J"
+		],
+		"image": "path/to/project2-image.jpg",
+		"video": "path/to/project2-video.mp4",
+		"link": "https://www.example.com/project2"
+	},
+
+    {
+		"title": "Project 4",
+		"description": "This is the second project description.",
+		"technologies": [
+			"React",
+			"Node.js",
+			"MongoDB"
+		],
+		"image": "path/to/project2-image.jpg",
+		"video": "path/to/project2-video.mp4",
+		"link": "https://www.example.com/project2"
+	},
+
+    {
+		"title": "Project 5",
+		"description": "This is the third project description.",
+		"technologies": [
+			"AD",
+			"NoFde.js",
+			"J"
+		],
+		"image": "path/to/project2-image.jpg",
+		"video": "path/to/project2-video.mp4",
+		"link": "https://www.example.com/project2"
+	},
+
+    {
+		"title": "Project 6",
+		"description": "This is the third project description.",
+		"technologies": [
+			"AD",
+			"NoFde.js",
+			"J"
+		],
+		"image": "path/to/project2-image.jpg",
+		"video": "path/to/project2-video.mp4",
+		"link": "https://www.example.com/project2"
+	},
+
+
+    {
+		"title": "Project 7",
+		"description": "This is the third project description.",
+		"technologies": [
+			"AD",
+			"NoFde.js",
+			"J"
+		],
+		"image": "path/to/project2-image.jpg",
+		"video": "path/to/project2-video.mp4",
+		"link": "https://www.example.com/project2"
+	},
+
+    {
+		"title": "Project 8",
+		"description": "This is the third project description.",
+		"technologies": [
+			"AD",
+			"NoFde.js",
+			"J"
+		],
+		"image": "path/to/project2-image.jpg",
+		"video": "path/to/project2-video.mp4",
+		"link": "https://www.example.com/project2"
+	},
+
+
+    {
+		"title": "Project 9",
+		"description": "This is the third project description.",
+		"technologies": [
+			"AD",
+			"NoFde.js",
+			"J"
+		],
+		"image": "path/to/project2-image.jpg",
+		"video": "path/to/project2-video.mp4",
+		"link": "https://www.example.com/project2"
+	}
+
+]
