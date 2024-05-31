@@ -144,16 +144,28 @@ body {
     color: #333333;
 }
 
+.icon-description-minigame:hover {
+    color: #4d4d4d;
+}
+
 .icon-description-contact {
     margin-top: 2px; 
     margin-left: 1px;
     color: #008000;
 }
 
+.icon-description-contact:hover {
+    color: #00a000ce;
+}
+
 .icon-description-website{
     margin-top: 2px; 
     margin-left: -13px;
     color: #E6E6FA;
+}
+
+.icon-description-website:hover {
+    color: #9898aadc;
 }
 
 /* Colouring the icons */
@@ -171,4 +183,7 @@ body {
 .material-symbols-outlined.minigame:hover { color: #4d4d4d; }
 
 .material-symbols-outlined.contact { color: #008000; }
+.material-symbols-outlined.contact:hover { color: #00a000ce; }
+
 .material-symbols-outlined.website { color: #E6E6FA; }
+.material-symbols-outlined.website:hover { color: #9898aadc; }
