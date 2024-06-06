@@ -1,120 +1,136 @@
 [
 	{
-		"title": "Project 1",
+		"title": "Flower",
 		"description": "This is the first project description.",
+		"monitor-description":"This project is a website page that I coded to warm up to HTML and CSS. It simulates the growth of 3 flowers and some of their petals falling." ,
 		"technologies": [
 			"HTML",
 			"CSS",
 			"JavaScript"
 		],
-		"image": "path/to/project1-image.jpg",
+		"image": "/images/project1.png",
 		"video": "path/to/project1-video.mp4",
-		"link": "https://www.example.com/project1"
+		"link": "https://github.com/sims1710/flower"
 	},
+
 	{
-		"title": "Project 2",
+		"title": "Christmas Lights",
 		"description": "This is the second project description.",
+		"monitor-description": "This website is a project inspired from the Christmas period, which helps simulate the twinkling of Christmas Lights on a snowy day. The user gets to toggle the lights and modify their blinking interval.",
 		"technologies": [
-			"React",
+			"HTML",
+			"CSS",
+			"JavaScript"
+		],
+		"image": "/images/project2.png",
+		"video": "path/to/project2-video.mp4",
+		"link": "https://github.com/sims1710/Christmas-Lights"
+	},
+
+    {
+		"title": "Number System Converter",
+		"description": "This is the third project description.",
+		"monitor-description": "It is a Python-based project that helps in the conversion between the binary, denary, hexadecimal and octal number systems.",
+		"technologies": [
+			"Python",
+			"Tthinker"
+		],
+		"image": "/images/project3.png",
+		"video": "path/to/project2-video.mp4",
+		"link": "https://github.com/sims1710/Converter"
+	},
+
+    {
+		"title": "Hangman Game",
+		"description": "This is the fourth project description.",
+		"monitor-description":"This C-coded, upgraded Hangman game revamps the classic providing new features, customisable game modes, varying difficulty levels, and engaging multiplayer and time-attack challenges.",
+		"technologies": [
+			"C"
+		],
+		"image": "/images/project4.png",
+		"video": "path/to/project2-video.mp4",
+		"link": "https://github.com/sims1710/PLC-Project"
+	},
+
+    {
+		"title": "Taylor Swift Lyrics Analysis",
+		"description": "This is the fifth project description.",
+		"monitor-description": "The project involves Natural Language Processing where I used different keywords to analyse whether she writes more favourably about the day or the night.",
+		"technologies": [
+			"Python",
+			"Pandas",
+			"Seaborn",
+			"Matpotlib",
+			"NLTK"
+		],
+		"image": "/images/project5.png",
+		"video": "path/to/project2-video.mp4",
+		"link": "https://github.com/sims1710/Taylor-Swift-Lyrics-Analysis"
+	},
+
+    {
+		"title": "Ava's Makeover",
+		"description": "This is the sixth project description.",
+		"monitor-description": "It is a 2D role-playing graphic novel game that explores situations where the main character experiences the different unconscious biases in her daily life and how she chooses to handle them.",
+		"technologies": [
+			"Ren.py",
+			"Adobe Photoshop"
+		],
+		"image": "/images/project6.png",
+		"video": "path/to/project2-video.mp4",
+		"link": "https://github.com/sims1710/Ava-s-Makeover"
+	},
+
+    {
+		"title": "Tour Bud",
+		"description": "This is the seventh project description.",
+		"monitor-description": "This Android Mobile App project is a tour-guide-as-a-service-mobile application that enables users to spontaneously find tours of their interests in the vicinity. " ,
+		"technologies": [
+			"Java",
+			"XML",
+			"Google Firebase Database",
+			"Google Maps API"
+		],
+		"image": "/images/project7.png",
+		"video": "path/to/project2-video.mp4",
+		"link": "https://github.com/sims1710/Tour-Bud-Mobile-App"
+	},
+
+    {
+		"title": "HotelConnect",
+		"description": "This is the eighth project description.",
+		"monitor-description": "The project is a hotel booking website that simplifies hotel bookings globally with a user-friendly interface, a wide hotel selection, and secure payment options, ensuring a stress-free experience for travelers.." ,
+		"technologies": [
+			"HTML",
+			"CSS",
+			"JavaScript",
 			"Node.js",
-			"MongoDB"
+			"Python",
+			"Jest",
+			"Supertest",
+			"Cypress",
+			"Mongo DB",
+			"Express.js"
 		],
-		"image": "path/to/project2-image.jpg",
+		"image": "/images/project8.png",
 		"video": "path/to/project2-video.mp4",
-		"link": "https://www.example.com/project2"
+		"link": "https://github.com/sims1710/ESC-2023-HotelConnect-Ascenda-Project"
 	},
 
     {
-		"title": "Project 3",
-		"description": "This is the third project description.",
+		"title": "Fake News Detection & Classification",
+		"description": "This is the ninth project description.",
+		"monitor-description": "The purpose of this project is to devise an AI model that is able to detect whether an article of news is fake or real, and thus classify the fake news type. " ,
 		"technologies": [
-			"AD",
-			"NoFde.js",
-			"J"
+			"Python",
+			"CNN",
+			"LTSM",
+			"GRU",
+			"GPT-2",
+			"Streamlit"
 		],
-		"image": "path/to/project2-image.jpg",
+		"image": "/images/project9.png",
 		"video": "path/to/project2-video.mp4",
-		"link": "https://www.example.com/project2"
-	},
-
-    {
-		"title": "Project 4",
-		"description": "This is the second project description.",
-		"technologies": [
-			"React",
-			"Node.js",
-			"MongoDB"
-		],
-		"image": "path/to/project2-image.jpg",
-		"video": "path/to/project2-video.mp4",
-		"link": "https://www.example.com/project2"
-	},
-
-    {
-		"title": "Project 5",
-		"description": "This is the third project description.",
-		"technologies": [
-			"AD",
-			"NoFde.js",
-			"J"
-		],
-		"image": "path/to/project2-image.jpg",
-		"video": "path/to/project2-video.mp4",
-		"link": "https://www.example.com/project2"
-	},
-
-    {
-		"title": "Project 6",
-		"description": "This is the third project description.",
-		"technologies": [
-			"AD",
-			"NoFde.js",
-			"J"
-		],
-		"image": "path/to/project2-image.jpg",
-		"video": "path/to/project2-video.mp4",
-		"link": "https://www.example.com/project2"
-	},
-
-
-    {
-		"title": "Project 7",
-		"description": "This is the third project description.",
-		"technologies": [
-			"AD",
-			"NoFde.js",
-			"J"
-		],
-		"image": "path/to/project2-image.jpg",
-		"video": "path/to/project2-video.mp4",
-		"link": "https://www.example.com/project2"
-	},
-
-    {
-		"title": "Project 8",
-		"description": "This is the third project description.",
-		"technologies": [
-			"AD",
-			"NoFde.js",
-			"J"
-		],
-		"image": "path/to/project2-image.jpg",
-		"video": "path/to/project2-video.mp4",
-		"link": "https://www.example.com/project2"
-	},
-
-
-    {
-		"title": "Project 9",
-		"description": "This is the third project description.",
-		"technologies": [
-			"AD",
-			"NoFde.js",
-			"J"
-		],
-		"image": "path/to/project2-image.jpg",
-		"video": "path/to/project2-video.mp4",
-		"link": "https://www.example.com/project2"
+		"link": "https://github.com/sims1710/Fake-News-Detection-Project"
 	}
-
 ]
