@@ -16,16 +16,35 @@
         </div>
         <div class="window">
           <div class="window-header">
-            <div class="window-header-title">ABOUT ME</div>
+            <div class="window-header-back">
+              <a href="/monitor_view/my_coding_projects.html">
+                <span class="material-symbols-outlined back">arrow_back</span>
+              </a>
+            </div>
+            <div class="window-header-title">Loading...</div>
             <div class="window-header-close">
               <a href="/monitor_view/main_menu.html">
                 <span class="material-symbols-outlined close">close</span>
               </a>
             </div>
           </div>
-          <div class="content"></div>
+          <div class="content">
+            <div class="project">
+              <img class="project-img" id="projectImage" src="#" alt="Project Image">
+              <h1 class="project-title" id="projectTitle">Project Title</h1>
+              <div class="tech-stack">
+                <div class="tech-stack-title"><h2>Tech Stack:</h2></div>             
+                <p class="tech-stack-desc" id="projectTechnologies"></p>
+                <div id="technologiesContainer"></div>
+              </div>
+              <p class="description" id="projectDescription">Project Description</p>
+              <a href="#" id="projectLink" target="_blank">Link to GitHub</a>
+            </div>
+          </div>
         </div>
     </div>
   </div>
+  <script src="/projects.json"></script>
+  <script src="/logic/project.js"></script>
 </body>
 </html>

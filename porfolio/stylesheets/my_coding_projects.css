@@ -3,14 +3,16 @@
 
 /* Projects Style */
 
+
 .projects {
     width: 100%;
     flex: 1;
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 2rem;
     padding: 2rem; 
+    margin-left: -0.5vw;
 }
 
 .material-symbols-outlined {
@@ -26,43 +28,43 @@
 }
 
 .project2 {
-    grid-row: 2;
-    grid-column: 1;
+    grid-row: 1;
+    grid-column: 2;
 }
 
 .project3 {
-    grid-row: 3;
-    grid-column: 1;
+    grid-row: 1;
+    grid-column: 3;
 }
 
 .project4 {
-    grid-row: 4;
-    grid-column: 1;
+    grid-row: 1;
+    grid-column: 4;
 }
 
 .project5 {
     grid-row: 1;
-    grid-column: 2;
+    grid-column: 5;
 }
 
 .project6 {
-    grid-row: 2;
-    grid-column: 2;
+    grid-row: 1;
+    grid-column: 6;
 }
 
 .project7 {
-    grid-row: 3;
-    grid-column: 2;
+    grid-row: 1;
+    grid-column: 7;
 }
 
 .project8 {
-    grid-row: 4;
-    grid-column: 2;
+    grid-row: 1;
+    grid-column: 8;
 }
 
 .project9 {
-    grid-row: 1;
-    grid-column: 3;
+    grid-row: 2;
+    grid-column: 1;
 }
 
 /* Column 1 */
@@ -78,18 +80,7 @@
     margin-top: -3vh;
 }
 
-/* Column 2 */
-.project5,
-.project6,
-.project7,
-.project8 {
-    margin-left: -3.5vw;
-}
 
-/* Column 3 */
-.project9 {
-    margin-left: -11.5vh;
-}
 
 .project1-title,
 .project2-title,
