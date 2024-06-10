@@ -1,2 +1,66 @@
 @import url(/stylesheets/main_menu.css);
 @import url(/stylesheets/more_about_me.css);
+
+/* Highschool Style */
+
+.highschool {
+    border-radius: 19px;
+    margin-left: 2.5vw; 
+    margin-top: 1.5vh;
+    width: 27vw;
+    height: 24.7vh;
+    padding: 1vw;
+    background-color: rgb(241, 218, 255); 
+    font-size: 12px;
+    border-radius: 19px;
+    color: rgb(70, 0, 110); 
+}
+
+.highschool:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: url(/images/cursor.cur),auto;
+}
+
+.highschool-title {
+    font-weight: bolder;
+}
+
+/* University Style */
+
+.university {
+    border-radius: 19px;
+    margin-left: -7vw; 
+    margin-top: 1.5vh;
+    width: 27vw;
+    height: 24.7vh;
+    padding: 1vw;
+    background-color: rgb(241, 218, 255); 
+    font-size: 12px;
+    border-radius: 19px;
+    color: rgb(70, 0, 110); 
+}
+
+
+/* Events Style */
+.events {
+    border-radius: 19px;
+    margin-left: 2.5vw; 
+    margin-top: -9.5vh;
+    width: 27vw;
+    height: 22.7vh;
+    padding: 1vw;
+    background-color: rgb(241, 218, 255); 
+    font-size: 12px;
+    border-radius: 19px;
+    color: rgb(70, 0, 110); 
+}
+
+.first-circle-description,
+.second-circle-description {
+    margin-top: -1vh;
+    margin-left: 0.4vw;
+    color: black;
+    position: relative;
+    padding-left: 10px;
+}

@@ -40,11 +40,23 @@ async function updateProject(index) {
             // Check if max-height is greater than 3.2vh
             if (titleMaxHeight && parseFloat(titleMaxHeight) > 3.2 * parseFloat(getComputedStyle(document.documentElement).fontSize)) {
                 const currentMarginTop = parseFloat(window.getComputedStyle(techStackElement).marginTop);
-                const newMarginTop = currentMarginTop - 3 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+                const newMarginTop = currentMarginTop - 3.5 * parseFloat(getComputedStyle(document.documentElement).fontSize);
                 techStackElement.style.marginTop = `${newMarginTop}px`;
             }
         } else {
             console.error('Tech stack element or project title container not found');
+        }
+
+        const projectDescriptionElement = document.querySelector('.description');
+
+        if (index === 7) {
+            if (techStackElement && projectTitleContainer) {
+                const currentHeight = parseFloat(window.getComputedStyle(projectDescriptionElement).height);
+                const newHeight = currentHeight - 2.8 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+                projectDescriptionElement.style.height = `${newHeight}px`;
+            } else {
+                console.error('Tech stack element or project title container not found');
+            }
         }
 
         project.technologies.forEach(tech => {
