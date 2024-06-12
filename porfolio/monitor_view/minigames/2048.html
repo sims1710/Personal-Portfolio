@@ -6,6 +6,7 @@
     <title>Simriti's Portfolio: Minigame</title>
     <link href="/stylesheets/minigame.css" type="text/css" rel="stylesheet">
     <link rel="icon" href="/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="2048.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 </head>
 <body>
@@ -16,7 +17,7 @@
         </div>
         <div class="window">
           <div class="window-header">
-            <div class="window-header-title">MINIGAME</div>
+            <div class="window-header-title">MINIGAME:2048</div>
             <div class="window-header-close">
               <a href="/monitor_view/main_menu.html">
                 <span class="material-symbols-outlined close">close</span>
@@ -24,11 +25,16 @@
             </div>
           </div>
           <div class="content">
-            <canvas id="gameCanvas" width="300" height="300"></canvas>
+            <div id="gameContainer">
+                <div id="scoreDisplay">Score: <span id="score">0</span></div>
+                <div id="gridContainer"></div>
+                <div id="gameOver">Game Over!</div>
+                <button id="restartButton">Restart</button>
+            </div>
           </div>
         </div>
     </div>
   </div>
-  <script src="/logic/minigame.js"></script>
+  <script src="/logic/2048.js"></script>
 </body>
 </html>
