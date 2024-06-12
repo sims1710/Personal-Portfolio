@@ -12,7 +12,7 @@
 }
 
 .reach-out, 
-.form {
+.form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,7 +28,7 @@
 /* Reach Out Styles */
 
 .reach-out {
-    margin-top: 2vh;
+    margin-top: 3vh;
     width: 42vw;
 }
 
@@ -49,6 +49,10 @@
     margin-top: -12vh;
     padding: 20px;
     padding-bottom: 10px;
+}
+
+.form:hover {
+    background-color: rgb(255, 230, 255);
 }
 
 .form-group {
@@ -83,8 +87,14 @@
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #007BFF;
+    background-color: rgb(219, 160, 255);;
     cursor: url(/images/cursor.png), auto;
     display: block;
     margin: 0 auto;
+    color: rgb(70, 0, 110); 
 }
+
+.form-group button:hover {
+    background-color: rgb(227, 181, 255);
+}
+
