@@ -1,2 +1,48 @@
 @import url(/stylesheets/monitor-view/main_menu.css);
 @import url(/stylesheets/monitor-view/more_about_me.css);
+
+/* Content Style */
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    width: 100%;
+}
+
+.game-box {
+    width: auto;
+    height: auto;
+    padding: 10vh;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.icon.itic-tac-toe {
+    background-image: url(/images/tic-tac-toe.png) !important;
+}
+
+.icon.ipong {
+    background-image: url(/images/pong.png);
+}
+
+.icon.ifruit-ninja {
+    background-image: url(/images/fruit-ninja.png);
+}
+
+.icon.ibreak-breaker {
+    background-image: url(/images/brick-breaker.png);
+}
+
+.icon.i2048 {
+    background-image: url(/images/2048.png);
+}
+
