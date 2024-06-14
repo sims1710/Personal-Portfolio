@@ -1,0 +1,157 @@
+@import url(/stylesheets/monitor-view/main_menu.css);
+@import url(/stylesheets/monitor-view/more_about_me.css);
+
+/* Highschool Style */
+
+.highschool {
+    border-radius: 19px;
+    margin-left: 2.5vw; 
+    margin-top: 1vh;
+    width: 27vw;
+    height: 24.7vh;
+    padding: 1vw;
+    background-color: rgb(241, 218, 255); 
+    font-size: 12px;
+    border-radius: 19px;
+    color: rgb(70, 0, 110); 
+}
+
+.highschool:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: url(/images/cursor.cur),auto;
+}
+
+.highschool-title,
+.university-title,
+.events-title {
+    font-weight: bolder;
+}
+
+/* University Style */
+
+.university {
+    border-radius: 19px;
+    margin-left: -35.6vw; 
+    margin-top: 1vh;
+    width: 27.3vw;
+    height: 33.7vh;
+    padding: 1vw;
+    background-color: rgb(241, 218, 255); 
+    font-size: 12px;
+    border-radius: 19px;
+    color: rgb(70, 0, 110); 
+}
+
+.university:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: url(/images/cursor.cur),auto;
+}
+
+/* Events Style */
+
+.events {
+    border-radius: 19px;
+    margin-left: 2.5vw; 
+    margin-top: -19.5vh;
+    width: 27vw;
+    height: 22.7vh;
+    padding: 1vw;
+    background-color: rgb(241, 218, 255); 
+    font-size: 12px;
+    border-radius: 19px;
+    color: rgb(70, 0, 110); 
+}
+
+.events:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: url(/images/cursor.cur),auto;
+}
+
+.first-circle-description,
+.second-circle-description {
+    margin-top: -1vh;
+    margin-left: 0.4vw;
+    color: black;
+    position: relative;
+    padding-left: 10px;
+}
+
+/* Hobbies Style */
+
+.hobbies {
+    border-radius: 19px;
+    margin-left: -35.6vw; 
+    margin-top: -10.5vh;
+    width: 13vw;
+    height: 13.7vh;
+    padding: 1vw;
+    background-color: rgb(241, 218, 255); 
+    font-size: 12px;
+    border-radius: 19px;
+    color: rgb(70, 0, 110); 
+}
+
+.hobbies:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: url(/images/cursor.cur),auto;
+}
+
+.material-symbols-outlined:not(.close) {
+    color: rgb(70, 0, 110);
+    font-size: 17px !important;
+    border: 1px solid rgb(70, 0, 110);
+    padding: 5px; 
+    background-color: rgb(219, 160, 255); 
+    border-radius: 5px;
+}
+
+.material-symbols-outlined:not(.close):hover {
+    background-color: rgb(241, 218, 255); 
+} 
+
+.hobby-icons {
+    margin-left: 1vw;
+}
+
+.hobbies-title {
+    font-weight: bolder;
+}
+
+/* Marketing Portfolio Styles */
+
+.marketing-portfolio {
+    border-radius: 19px;
+    margin-top: -28.2vh;
+    margin-left:47.2vw;
+    width: 12vw;
+    height: 13.7vh;
+    padding: 1vw;
+    background-color: rgb(241, 218, 255) !important;
+    background-image: url(/images/marketing-portfolio.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 12px;
+    color:rgb(70, 0, 110); 
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.marketing-portfolio:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: url(/images/cursor.cur),auto;
+}
+
+.marketing-portfolio-sub {
+    font-weight: normal;
+    margin-top: -1vh;
+}

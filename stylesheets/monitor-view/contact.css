@@ -1,0 +1,101 @@
+@import url(/stylesheets/monitor-view/main_menu.css);
+@import url(/stylesheets/monitor-view/more_about_me.css);
+
+/* Content Style */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.reach-out, 
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; 
+    margin-bottom: 20px; 
+    width: 45vw; 
+    color: rgb(70, 0, 110); 
+    background-color: rgb(241, 218, 255); 
+    border-radius: 19px;
+}
+
+/* Reach Out Styles */
+
+.reach-out {
+    margin-top: 3vh;
+    width: 42vw;
+}
+
+.reach-out-title {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.reach-out:hover {
+    background-color: rgb(255, 230, 255);
+}
+
+/* Form Style */
+
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: -12vh;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.form:hover {
+    background-color: rgb(255, 230, 255);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.form-group label {
+    flex: 0 0 120px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(50% - 10px);
+}
+
+.form-group input {
+    margin-right: 10px;
+}
+
+.form-group textarea {
+    width: calc(100% - 130px);
+}
+
+.form-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(219, 160, 255);;
+    cursor: url(/images/cursor.png), auto;
+    display: block;
+    margin: 0 auto;
+    color: rgb(70, 0, 110); 
+}
+
+.form-group button:hover {
+    background-color: rgb(227, 181, 255);
+    cursor: url(/images/cursor.png), auto;
+}
+

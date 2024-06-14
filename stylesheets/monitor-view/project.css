@@ -1,0 +1,160 @@
+@import url(/stylesheets/monitor-view/main_menu.css);
+@import url(/stylesheets/monitor-view/more_about_me.css);
+
+/* Header Style */
+
+.material-symbols-outlined.back { 
+    color: white; 
+    font-size: 24px !important;
+    cursor: url(/images/cursor.cur),auto;
+}
+
+/* Image Styles */
+
+.project-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border: 5px solid  rgb(241, 218, 255);
+    border-radius: 19px;
+    margin-left: 5vw; 
+    margin-top: 2vh;
+    width: 9vw;
+    padding: 10vw;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.project-img:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: url(/images/cursor.cur),auto;
+}
+
+/* Title Styles */
+
+.project-title {
+    background-color: rgb(241, 218, 255); 
+    padding: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-top: 1vh;
+    margin-left: 7.3vw;
+    max-height: 3.2vh;
+    font-size: 17px;
+    width: 14vw;
+    border-radius: 19px;
+    text-align: center;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    line-height: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-title:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: url(/images/cursor.cur),auto;
+}
+
+/* Technologies Styles */
+
+.tech-stack {
+    background-color: rgb(241, 218, 255); 
+    font-size: 12px;
+    padding: 1vw;
+    margin-top: -45.5vh;
+    margin-left: 28vw;
+    width: 29vw;
+    max-height: 16vh;
+    border-radius: 19px;
+    color: rgb(70, 0, 110); 
+}
+
+.tech-stack:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: url(/images/cursor.cur),auto;
+}
+
+.tech-stack-title {
+    margin-top: -1.9vh;
+    margin-left: 0.5vw;
+    color: rgb(70, 0, 110);
+}
+
+#technologiesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    gap: 5px; 
+}
+
+.tech-box {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(70, 0, 110); 
+    padding: 5px; 
+    background-color: rgb(219, 160, 255); 
+    border-radius: 5px; 
+    margin: 5px; 
+}
+
+.tech-box:hover {
+    background-color: rgb(241, 218, 255);
+}
+
+/* Description Styles */
+
+.description {
+    font-size: 6px;
+    background-color: rgb(241, 218, 255); 
+    padding: 1vw;
+    margin-top: 2vh;
+    margin-left: 28vw;
+    width: 29vw;
+    height: 25.2vh;
+    border-radius: 19px;
+    font-size: 16px;
+    color: rgb(70, 0, 110);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.description:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: url(/images/cursor.cur),auto;
+}
+
+/* Link Styles */
+#projectLink {
+    display: inline-block;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: rgb(241, 218, 255);
+    color: rgb(70, 0, 110);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 19px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bolder;
+    margin-left: 25vw;
+}
+
+#projectLink:hover {
+    background-color: rgb(219, 160, 255);
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: url(/images/cursor.cur),auto;
+}
+
+

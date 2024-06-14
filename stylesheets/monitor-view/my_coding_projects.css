@@ -1,0 +1,143 @@
+@import url(/stylesheets/monitor-view/main_menu.css);
+@import url(/stylesheets/monitor-view/more_about_me.css);
+
+/* Projects Style */
+
+.projects {
+    width: 100%;
+    flex: 1;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    gap: 2rem;
+    padding: 2rem; 
+    margin-left: -0.5vw;
+}
+
+.material-symbols-outlined {
+    cursor: url(/images/cursor.cur), auto;
+    font-size: 60px !important;
+}
+
+/* Project Icons Positioning */
+
+.project1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.project2 {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.project3 {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.project4 {
+    grid-row: 1;
+    grid-column: 4;
+}
+
+.project5 {
+    grid-row: 1;
+    grid-column: 5;
+}
+
+.project6 {
+    grid-row: 1;
+    grid-column: 6;
+}
+
+.project7 {
+    grid-row: 1;
+    grid-column: 7;
+}
+
+.project8 {
+    grid-row: 1;
+    grid-column: 8;
+}
+
+.project9 {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+/* Column 1 */
+.project1,
+.project2,
+.project3,
+.project4,
+.project5,
+.project6,
+.project7,
+.project8,
+.project9 {
+    margin-top: -3vh;
+}
+
+
+
+.project1-title,
+.project2-title,
+.project3-title,
+.project4-title,
+.project5-title,
+.project6-title,
+.project7-title,
+.project8-title,
+.project9-title {
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: -0.25vh;
+}
+
+/* Individual Projects Colour */
+
+.material-symbols-outlined.p1 {color: red;}
+.material-symbols-outlined.p1:hover {color: rgb(255, 101, 101);}
+
+.material-symbols-outlined.p2 {color: aqua;}
+.material-symbols-outlined.p2:hover {color: rgb(183, 252, 252);}
+
+.material-symbols-outlined.p3 {color: blue;}
+.material-symbols-outlined.p3:hover {color: rgb(142, 142, 255);}
+
+.material-symbols-outlined.p4 {color: blueviolet;}
+.material-symbols-outlined.p4:hover {color: rgb(190, 145, 232);}
+
+.material-symbols-outlined.p5 {color: brown;}
+.material-symbols-outlined.p5:hover {color: rgb(164, 131, 131);}
+
+.material-symbols-outlined.p6 {color: cadetblue;}
+.material-symbols-outlined.p6:hover {color: rgb(133, 159, 159);}
+
+.material-symbols-outlined.p7 {color: chartreuse;}
+.material-symbols-outlined.p7:hover {color: rgb(190, 255, 126);}
+
+.material-symbols-outlined.p8 {color: chocolate;}
+.material-symbols-outlined.p8:hover {color: rgb(208, 155, 118);}
+
+.material-symbols-outlined.p9 {color: coral;}
+.material-symbols-outlined.p9:hover {color: rgb(245, 188, 167);}
+
+/* Project Title Style */
+
+.project1-title,
+.project2-title,
+.project3-title,
+.project4-title,
+.project5-title,
+.project6-title,
+.project7-title,
+.project8-title,
+.project9-title {
+    width: 90px;
+    overflow-wrap: break-word; 
+    word-break: break-word;
+    text-align: center;
+    margin-left: -1vw;
+}

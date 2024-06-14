@@ -1,0 +1,137 @@
+[
+	{
+		"title": "Flower",
+		"description": "This is the first project description.",
+		"monitordescription":"I created a web page to practice HTML and CSS, simulating the growth and petal fall of three flowers.\n\n The HTML structure includes flower parts, while the CSS uses gradients, shapes, and animations to create dynamic visual effects. This project helped me improve my skills and was an enjoyable learning experience.",
+		"technologies": [
+			"HTML",
+			"CSS",
+			"JavaScript"
+		],
+		"image": "/images/project1.png",
+		"video": "path/to/project1-video.mp4",
+		"link": "https://github.com/sims1710/flower"
+	},
+
+	{
+		"title": "Christmas Lights",
+		"description": "This is the second project description.",
+		"monitordescription": "This website is a project inspired from the Christmas period, which helps simulate the twinkling of Christmas Lights on a snowy day. It features a row of lights represented by circles arranged horizontally. The lights can blink with three different colors. The application allows users to turn the lights on and off, change the blinking interval, and dynamically update the number of lights.",
+		"technologies": [
+			"HTML",
+			"CSS",
+			"JavaScript"
+		],
+		"image": "/images/project2.png",
+		"video": "path/to/project2-video.mp4",
+		"link": "https://github.com/sims1710/Christmas-Lights"
+	},
+
+    {
+		"title": "Number System Converter",
+		"description": "This is the third project description.",
+		"monitordescription": "Number System Converter is a Python program that functions as a converter application, allowing the user to perform various conversions between binary, denary (decimal), hexadecimal, and octal number systems. The program provides a menu with different conversion options and includes input validation checks to ensure the user provides valid inputs for the chosen conversion. ",
+		"technologies": [
+			"Python",
+			"Tthinker"
+		],
+		"image": "/images/project3.png",
+		"video": "path/to/project2-video.mp4",
+		"link": "https://github.com/sims1710/Converter"
+	},
+
+    {
+		"title": "Hangman Game",
+		"description": "This is the fourth project description.",
+		"monitordescription":"This revamped version of the classic Hangman game aims to provide an engaging and immersive experience by introducing new features and mechanics. Players can personalise their experience by choosing different game modes, difficulty levels, and participating in special modes like multiplayer and time-attack challenges. ",
+		"technologies": [
+			"C",
+			"HTML"
+		],
+		"image": "/images/project4.png",
+		"video": "path/to/project2-video.mp4",
+		"link": "https://github.com/sims1710/PLC-Project"
+	},
+
+    {
+		"title": "Taylor Swift Lyrics Analysis",
+		"description": "This is the fifth project description.",
+		"monitordescription": "The project involves using Natural Language Processing to analyse Taylor Swift's lyrics by first exploring her references to 'midnight' and then expanding the search to track her references to day, night, and time in general. The sentiment analysis is used to study her tone and vibe over her career. The final goal is to determine if she writes more favorably about day or night.",
+		"technologies": [
+			"Python",
+			"Pandas",
+			"Seaborn",
+			"Matpotlib",
+			"NLTK"
+		],
+		"image": "/images/project5.png",
+		"video": "path/to/project2-video.mp4",
+		"link": "https://github.com/sims1710/Taylor-Swift-Lyrics-Analysis"
+	},
+
+    {
+		"title": "Ava's Makeover",
+		"description": "This is the sixth project description.",
+		"monitordescription": "Ava's Makeover is a 2D role-playing game resembling a graphic novel. Players step into the main character's shoes, making impactful decisions that shape their journey. Trigger events prompt choices revealing biases, with opportunities for players to overcome them for positive outcomes or face consequences. Developed with Renpy, a Python-based framework, it simplifies coding scenes, actions, and UI elements for a smoother gaming experience.",
+		"technologies": [
+			"Ren.py",
+			"Adobe Photoshop"
+		],
+		"image": "/images/project6.png",
+		"video": "path/to/project2-video.mp4",
+		"link": "https://github.com/sims1710/Ava-s-Makeover"
+	},
+
+    {
+		"title": "Tour Bud",
+		"description": "This is the seventh project description.",
+		"monitordescription": "Our project is a mobile tour guide service. It helps travelers navigate unfamiliar places with ease, offering spontaneous tour discovery nearby. Users create dual accounts as guides or tourists. Guides manage tour listings and RSVPs, while tourists find and RSVP to tours, sorted by proximity and tags, with a map showing tour locations. " ,
+		"technologies": [
+			"Java",
+			"XML",
+			"Google Firebase Database",
+			"Google Maps API"
+		],
+		"image": "/images/project7.png",
+		"video": "path/to/project2-video.mp4",
+		"link": "https://github.com/sims1710/Tour-Bud-Mobile-App"
+	},
+
+    {
+		"title": "HotelConnect",
+		"description": "This is the eighth project description.",
+		"monitordescription": "HotelConnect offers a user-friendly interface and a wide hotel selection for stress-free travel planning. Users search by destination, dates, rooms, and guests, then book securely through our payment portal." ,
+		"technologies": [
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"Node.js",
+			"Python",
+			"Jest",
+			"Supertest",
+			"Cypress",
+			"Mongo DB",
+			"Express.js"
+		],
+		"image": "/images/project8.png",
+		"video": "path/to/project2-video.mp4",
+		"link": "https://github.com/sims1710/ESC-2023-HotelConnect-Ascenda-Project"
+	},
+
+    {
+		"title": "Fake News Detection & Classification",
+		"description": "This is the ninth project description.",
+		"monitordescription": "This project aims to create an AI model for detecting fake news and classifying its type among 7 categories: BS, Bias, Conspiracy, Hate, Satire, Junksci. Our model comprises 2 classification models: one for binary fake/real news detection and another for multi-class fake news type classification. We evaluated CNN, GRU, LTSM, and GPT2 models, combining the best-performing algorithms. Evaluation metrics include Accuracy, Precision, Recall, and F1 Score." ,
+		"technologies": [
+			"Python",
+			"CNN",
+			"LTSM",
+			"GRU",
+			"GPT-2",
+			"Streamlit"
+		],
+		"image": "/images/project9.png",
+		"video": "path/to/project2-video.mp4",
+		"link": "https://github.com/sims1710/Fake-News-Detection-Project"
+	}
+]
