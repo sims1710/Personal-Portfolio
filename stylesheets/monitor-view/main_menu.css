@@ -103,7 +103,7 @@ body {
 .folder-text {
     font-size: 9px;
     color: #27ae5fad;
-    font-weight: bolder;
+    font-weight: bolder !important;
 }
 
 /* Positioning the item descriptions */
@@ -113,6 +113,8 @@ body {
     margin-left: -0.2vw;
     color: #FFFF00;
 }
+
+.chrome .icon-description-about { margin-left: -0.1vw; }
 
 .icon-description-about:hover {
     color: #fdfd89f3;
@@ -125,6 +127,8 @@ body {
     color: #000080;
 }
 
+.chrome .icon-description-projects { margin-left: 0.1vw; }
+
 .icon-description-projects:hover {
     color: #42427b;
     transition: 0.5s;
@@ -135,6 +139,8 @@ body {
     margin-left: -1.2vw;
     color: #DC143C;
 }
+
+.chrome .icon-description-extracurricular { margin-left: -0.8vw; }
 
 .icon-description-extracurricular:hover {
     color: #ba5454;
@@ -147,6 +153,8 @@ body {
     color: #333333;
 }
 
+.chrome .icon-description-minigame { margin-left: -0.01vw; }
+
 .icon-description-minigame:hover {
     color: #4d4d4d;
     transition: 0.5s;
@@ -158,16 +166,20 @@ body {
     color: #008000;
 }
 
+.chrome .icon-description-contact { margin-left: -0.3vw; }
+
 .icon-description-contact:hover {
     color: #00a000ce;
     transition: 0.5s;
 }
 
-.icon-description-website{
+.icon-description-website {
     margin-top: 2px; 
     margin-left: -0.9vw;
     color: #E6E6FA;
 }
+
+.chrome .icon-description-website { margin-left: -0.7vw; }
 
 .icon-description-website:hover {
     color: #9898aadc;
