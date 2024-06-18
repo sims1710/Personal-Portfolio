@@ -48,6 +48,7 @@
 
 .material-symbols-outlined.close:hover { 
     color: #f8f8f872; 
+    transition: 0.5s;
 }
 
 /* Content Style */
@@ -164,6 +165,7 @@
 .material-symbols-outlined.movie:hover, 
 .material-symbols-outlined.book:hover {
     background-color: rgb(241, 218, 255); 
+    transition: 0.5s;
 } 
 
 /* Skills Style */

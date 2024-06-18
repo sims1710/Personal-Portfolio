@@ -5,44 +5,64 @@
 
 .content {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 17vh);
     grid-template-rows: 1fr;
     gap: 10px;
-    width: 100%;
+    margin-left: 11vh;
+    margin-top: 15vh;
 }
 
+/* Game Container Styles */
+
 .game-box {
-    width: auto;
-    height: auto;
-    padding: 10vh;
+    padding: 6vh;
+    background-color: rgb(241, 218, 255);
+    height: 8vh;
+    border-radius: 19px;
+}
+
+.game-box:hover {
+    background-color: rgb(209, 135, 255);
+    transition: 0.5s;
+    cursor: url(/images/cursor.cur),auto;
 }
 
 .icon {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
+    margin-top: -6.5vh;
+    margin-left: -2vw;
+    height: 6vh;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    cursor: pointer;
+    cursor: url(/images/cursor.cur),auto;
+    padding: 6vh;
 }
 
-.icon.itic-tac-toe {
-    background-image: url(/images/tic-tac-toe.png) !important;
+/* Background Image Styles */
+
+.icon.itic-tac-toe { background-image: url(/images/tic-tac-toe.png); }
+
+.icon.ipong { background-image: url(/images/pong.png); }
+
+.icon.ifruit-ninja { background-image: url(/images/fruit-ninja.png); }
+
+.icon.ibreak-breaker { background-image: url(/images/brick-breaker.png); }
+
+.icon.i2048 { background-image: url(/images/2048.png); }
+
+/* Title Styles */ 
+
+.game-title {
+    font-size: 10px;
+    text-align: center;
+    margin-top: -1vh;
+    color: rgb(70, 0, 110);
+    white-space: nowrap;
 }
 
-.icon.ipong {
-    background-image: url(/images/pong.png);
+.game-title.tic-tac-toet,
+.game-title.fruit-ninjat,
+.game-title.brick-breakert,
+.game-title.twot {
+    margin-left: -0.5vw;
 }
-
-.icon.ifruit-ninja {
-    background-image: url(/images/fruit-ninja.png);
-}
-
-.icon.ibreak-breaker {
-    background-image: url(/images/brick-breaker.png);
-}
-
-.icon.i2048 {
-    background-image: url(/images/2048.png);
-}
-

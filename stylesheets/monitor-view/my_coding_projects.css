@@ -124,6 +124,8 @@
 .material-symbols-outlined.p9 {color: coral;}
 .material-symbols-outlined.p9:hover {color: rgb(245, 188, 167);}
 
+.material-symbols-outlined:hover{ transition: 0.5s; }
+
 /* Project Title Style */
 
 .project1-title,

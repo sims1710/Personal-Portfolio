@@ -106,6 +106,7 @@
 
 .tech-box:hover {
     background-color: rgb(241, 218, 255);
+    transition: 0.5s;
 }
 
 /* Description Styles */

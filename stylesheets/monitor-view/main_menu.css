@@ -110,62 +110,68 @@ body {
 
 .icon-description-about {
     margin-top: 2px; 
-    margin-left: -3px;
+    margin-left: -0.2vw;
     color: #FFFF00;
 }
 
 .icon-description-about:hover {
     color: #fdfd89f3;
+    transition: 0.5s;
 }
 
 .icon-description-projects {
     margin-top: 2px; 
-    margin-left: -2px;
+    margin-left: -0.1vw;
     color: #000080;
 }
 
 .icon-description-projects:hover {
     color: #42427b;
+    transition: 0.5s;
 }
 
 .icon-description-extracurricular {
     margin-top: 2px; 
-    margin-left: -15px;
+    margin-left: -1.2vw;
     color: #DC143C;
 }
 
 .icon-description-extracurricular:hover {
     color: #ba5454;
+    transition: 0.5s;
 }
 
 .icon-description-minigame {
     margin-top: 2px; 
-    margin-left: -2.8px;
+    margin-left: -0.25vw;
     color: #333333;
 }
 
 .icon-description-minigame:hover {
     color: #4d4d4d;
+    transition: 0.5s;
 }
 
 .icon-description-contact {
     margin-top: 2px; 
-    margin-left: -6px;
+    margin-left: -0.55vw;
     color: #008000;
 }
 
 .icon-description-contact:hover {
     color: #00a000ce;
+    transition: 0.5s;
 }
 
 .icon-description-website{
     margin-top: 2px; 
-    margin-left: -13px;
+    margin-left: -0.9vw;
     color: #E6E6FA;
 }
 
 .icon-description-website:hover {
     color: #9898aadc;
+    transition: 0.5s;
 }
 
 /* Colouring the icons */
@@ -187,3 +193,5 @@ body {
 
 .material-symbols-outlined.website { color: #E6E6FA; }
 .material-symbols-outlined.website:hover { color: #9898aadc; }
+
+.material-symbols-outlined:hover{ transition: 0.5s; }
