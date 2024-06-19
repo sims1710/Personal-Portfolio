@@ -1,5 +1,6 @@
 @import url(/stylesheets/monitor-view/main_menu.css);
 @import url(/stylesheets/monitor-view/more_about_me.css);
+@import url(/stylesheets/monitor-view/project.css);
 
 /* Content Style */
 
@@ -53,16 +54,16 @@
 /* Title Styles */ 
 
 .game-title {
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     margin-top: -1vh;
     color: rgb(70, 0, 110);
     white-space: nowrap;
+    font-weight: 600;
 }
 
-.game-title.tic-tac-toet,
-.game-title.fruit-ninjat,
-.game-title.brick-breakert,
-.game-title.twot {
-    margin-left: -0.5vw;
-}
+.game-title.tic-tac-toet { margin-left: -1.2vw; }
+
+.game-title.brick-breakert { margin-left: -1.5vw; }
+
+.game-title.fruit-ninjat { margin-left: -1vw; }

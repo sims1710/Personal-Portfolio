@@ -13,7 +13,10 @@ canvas.addEventListener('click', handleCanvasClick);
 function drawBoard() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    ctx.strokeStyle = '#333';
+    ctx.fillStyle = 'rgb(241, 218, 255)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    ctx.strokeStyle = 'rgb(70, 0, 110)';
     ctx.lineWidth = 2;
 
     for (let i = 1; i < boardSize; i++) {
@@ -98,6 +101,17 @@ function checkWinner() {
     if (!board.flat().includes('')) {
         winner = 'Tie';
     }
+}
+
+function resetGame() {
+    for (let row = 0; row < boardSize; row++) {
+        for (let col = 0; col < boardSize; col++) {
+            board[row][col] = '';
+        }
+    }
+    currentPlayer = 'X';
+    winner = null;
+    drawBoard();
 }
 
 drawBoard();
