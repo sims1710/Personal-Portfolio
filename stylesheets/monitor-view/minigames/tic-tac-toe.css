@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     height: 80vh;
-    margin-top: -8vh;
+    margin-top: -10vh;
     margin-left: 0.45vw;
 }
 
@@ -22,16 +22,19 @@ canvas {
 /* Button Styles */
 
 #retryButton {
-    padding: 10px 20px;
+    padding: 8px 16px;
     font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: rgb(219, 160, 255);;
+    color: rgb(70, 0, 110);
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #retryButton:hover {
-    background-color: #45a049;
+    background-color: rgb(227, 181, 255);
+    cursor: url(/images/cursor.cur), auto;
+    transition: 0.5s;
 }
 

@@ -19,6 +19,9 @@ function drawBoard() {
     ctx.strokeStyle = 'rgb(70, 0, 110)';
     ctx.lineWidth = 2;
 
+    let newX = canvas.width / 2;
+    let newY = canvas.height / 2;
+
     for (let i = 1; i < boardSize; i++) {
         ctx.beginPath();
         ctx.moveTo(i * cellSize, 0);
@@ -35,9 +38,9 @@ function drawBoard() {
         for (let col = 0; col < boardSize; col++) {
             const cellValue = board[row][col];
             if (cellValue !== '') {
-                ctx.font = '48px Arial';
-                ctx.fillStyle = cellValue === 'X' ? 'blue' : 'red';
-                ctx.fillText(cellValue, col * cellSize + 25, row * cellSize + 75);
+                ctx.font = '48px "M PLUS Rounded 1c"';
+                ctx.fillStyle = cellValue === 'X' ? '#660033' : '#336600';
+                ctx.fillText(cellValue, col * cellSize + 32.5, row * cellSize + 70);
             }
         }
     }
@@ -47,8 +50,12 @@ function drawBoard() {
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         ctx.fillStyle = 'white';
-        ctx.font = '48px Arial';
-        ctx.fillText(`${winner} wins!`, 50, canvas.height / 2);
+        ctx.font = '108px M PLUS Rounded 1c';
+        if (winner === 'Tie') {
+            ctx.fillText('It\'s a tie!', newX - 96, newY + 20);            
+        } else {
+            ctx.fillText(`${winner} wins!`, newX - 71, newY + 20);
+        }
     }
 }
 

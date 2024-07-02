@@ -99,5 +99,6 @@
 .form-group button:hover {
     background-color: rgb(227, 181, 255);
     cursor: url(/images/cursor.png), auto;
+    transition: 0.5s;
 }
 
