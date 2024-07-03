@@ -24,11 +24,12 @@ canvas {
 #retryButton {
     padding: 8px 16px;
     font-size: 16px;
-    background-color: rgb(219, 160, 255);;
+    background-color: rgb(219, 160, 255);
     color: rgb(70, 0, 110);
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    border: 2px solid rgb(70, 0, 110);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 

@@ -1,0 +1,61 @@
+@import url(/stylesheets/monitor-view/minigame.css);
+
+/* Content Styles */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.25vh;
+    margin-left: 0vh ;
+}
+
+#gameCanvas {
+    border: 2px solid rgb(70, 0, 110);
+    border-radius: 19px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styles */
+
+#controls {
+    margin-top: -0.1vh;
+}
+
+button {
+    margin: 5px;
+    border: 2px solid rgb(70, 0, 110);
+    border-radius: 5px;
+    background-color: rgb(219, 160, 255);
+}
+
+button:hover {
+    background-color: rgb(227, 181, 255);
+    cursor: url(/images/cursor.cur), auto;
+    transition: 0.5s;
+}
+
+.material-symbols-outlined.play,
+.material-symbols-outlined.pause,
+.material-symbols-outlined.replay {
+    color: rgb(70, 0, 110);
+}
+
+/* Text Styles */
+
+.pong-instructions {
+    margin-top: -0.1vh;
+    font-size: 10px;
+    color: rgb(70, 0, 110);
+    background-color: rgb(227, 181, 255);
+    border: 2px solid rgb(70, 0, 110);
+    border-radius: 5px;
+    padding: 2px 20px;
+    font-weight: bolder;
+}
+
+.pong-instructions:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: url(/images/cursor.cur),auto;
+}

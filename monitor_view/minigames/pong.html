@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simriti's Portfolio: Minigame</title>
-    <link href="/stylesheets/monitor-view/minigame.css" type="text/css" rel="stylesheet">
+    <link href="/stylesheets/monitor-view/minigames/pong.css" type="text/css" rel="stylesheet">
     <link rel="icon" href="/images/logo.png" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 </head>
@@ -30,6 +30,18 @@
           </div>
           <div class="content">
             <canvas id="gameCanvas" width="300" height="300"></canvas>
+            <div id="controls">
+              <button id="playPauseButton">
+                <span id="playSymbol" class="material-symbols-outlined play" style="display: inline;">play_arrow</span>
+                <span id="pauseSymbol" class="material-symbols-outlined pause" style="display: none;">pause</span>
+              </button>                 
+              <button id="resetButton">
+                <span class="material-symbols-outlined replay">replay</span>
+              </button>
+            </div>
+            <div class="pong-instructions">
+              <p>Use Arrow Up and Arrow Down keys to move the paddle.</p>
+            </div>
           </div>
         </div>
     </div>
