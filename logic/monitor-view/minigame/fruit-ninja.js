@@ -1,85 +1,88 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
+const gameButton = document.getElementById('gameButton');
+const scoreDisplay = document.getElementById('scoreDisplay');
 
+let gameRunning = false;
+let gameOver = false;
+let score = 0;
 const fruits = [];
 const bombs = [];
-let score = 0;
-let gameOver = false;
+
+const fruitImage = new Image();
+fruitImage.src = '/images/fruit.png';
+
+const bombImage = new Image();
+bombImage.src = '/images/bomb.png';
+
+ctx.fillStyle = 'rgb(219, 160, 255)';
+ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 class Fruit {
-    constructor(x, y, radius, color, velocityY) {
+    constructor(x, y, radius, velocityY) {
         this.x = x;
         this.y = y;
         this.radius = radius;
-        this.color = color;
         this.velocityY = velocityY;
-    }
-
-    draw() {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-        ctx.fillStyle = this.color;
-        ctx.fill();
-        ctx.closePath();
     }
 
     update() {
         this.y += this.velocityY;
+    }
+
+    draw() {
+        ctx.drawImage(fruitImage, this.x - this.radius, this.y - this.radius, this.radius * 2, this.radius * 2);
     }
 }
 
 class Bomb {
-    constructor(x, y, radius, color, velocityY) {
+    constructor(x, y, radius, velocityY) {
         this.x = x;
         this.y = y;
         this.radius = radius;
-        this.color = color;
         this.velocityY = velocityY;
-    }
-
-    draw() {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-        ctx.fillStyle = this.color;
-        ctx.fill();
-        ctx.closePath();
     }
 
     update() {
         this.y += this.velocityY;
+    }
+
+    draw() {
+        ctx.drawImage(bombImage, this.x - this.radius, this.y - this.radius, this.radius * 2, this.radius * 2);
     }
 }
 
 function createFruit() {
     const x = Math.random() * (canvas.width - 50) + 25;
-    const radius = 20;
-    const color = 'orange';
+    const radius = 30;
     const velocityY = Math.random() * 3 + 1;
-    fruits.push(new Fruit(x, -radius, radius, color, velocityY));
+    fruits.push(new Fruit(x, -radius, radius, velocityY));
 }
 
 function createBomb() {
     const x = Math.random() * (canvas.width - 50) + 25;
-    const radius = 15;
-    const color = 'red';
+    const radius = 25;
     const velocityY = Math.random() * 3 + 1;
-    bombs.push(new Bomb(x, -radius, radius, color, velocityY));
+    bombs.push(new Bomb(x, -radius, radius, velocityY));
 }
 
 function drawScore() {
-    ctx.font = '24px Arial';
-    ctx.fillStyle = 'black';
-    ctx.fillText(`Score: ${score}`, 20, 40);
+    scoreDisplay.innerText = `Score: ${score}`;
 }
 
 function drawGameOver() {
-    ctx.font = '40px Arial';
+    ctx.font = '36px "M PLUS Rounded 1c"';
     ctx.fillStyle = 'red';
-    ctx.fillText('Game Over', canvas.width / 2 - 100, canvas.height / 2);
+    ctx.fillText('Game Over!', canvas.width / 2 - 100, canvas.height / 2);
 }
 
 function updateGame() {
     if (!gameOver) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        ctx.fillStyle = 'rgb(219, 160, 255)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
         fruits.forEach(fruit => {
             fruit.update();
             fruit.draw();
@@ -112,35 +115,72 @@ function updateGame() {
 }
 
 canvas.addEventListener('mousedown', event => {
-    const mouseX = event.clientX - canvas.getBoundingClientRect().left;
-    const mouseY = event.clientY - canvas.getBoundingClientRect().top;
+    if (gameRunning && !gameOver) {
+        const mouseX = event.clientX - canvas.getBoundingClientRect().left;
+        const mouseY = event.clientY - canvas.getBoundingClientRect().top;
 
-    fruits.forEach((fruit, index) => {
-        const distance = Math.sqrt((mouseX - fruit.x) ** 2 + (mouseY - fruit.y) ** 2);
-        if (distance < fruit.radius) {
-            fruits.splice(index, 1);
-            score++;
-            createFruit();
-        }
-    });
+        let fruitClicked = false;
+        fruits.forEach((fruit, index) => {
+            const distance = Math.sqrt((mouseX - fruit.x) ** 2 + (mouseY - fruit.y) ** 2);
+            if (distance < fruit.radius) {
+                fruits.splice(index, 1);
+                score++;
+                createFruit();
+                fruitClicked = true;
+            }
+        });
 
-    bombs.forEach((bomb, index) => {
-        const distance = Math.sqrt((mouseX - bomb.x) ** 2 + (mouseY - bomb.y) ** 2);
-        if (distance < bomb.radius) {
-            gameOver = true;
+        let bombClicked = false;
+        bombs.forEach((bomb, index) => {
+            const distance = Math.sqrt((mouseX - bomb.x) ** 2 + (mouseY - bomb.y) ** 2);
+            if (distance < bomb.radius) {
+                gameOver = true;
+                gameRunning = false;
+                drawGameOver();
+                gameButton.innerHTML = '<span class="material-symbols-outlined replay">replay</span>';
+                bombClicked = true;
+            }
+        });
+
+        if (fruitClicked || bombClicked) {
+            requestAnimationFrame(gameLoop);
         }
-    });
+    }
 });
 
-function gameLoop() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    updateGame();
 
-    if (!gameOver) {
-        requestAnimationFrame(gameLoop);
+function gameLoop() {
+    if (gameRunning) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        updateGame();
+        if (!gameOver) {
+            requestAnimationFrame(gameLoop);
+        }
     }
 }
 
-createFruit();
-createBomb();
-gameLoop();
+gameButton.addEventListener('click', () => {
+    if (!gameRunning) {
+        gameRunning = true;
+        gameOver = false;
+        score = 0;
+        fruits.length = 0;
+        bombs.length = 0;
+        createFruit();
+        createBomb();
+        gameButton.innerHTML = '<span class="material-symbols-outlined replay">replay</span>';
+        gameLoop();
+    } else {
+        // Restart the game
+        gameRunning = false;
+        gameOver = false;
+        score = 0;
+        fruits.length = 0;
+        bombs.length = 0;
+        gameButton.innerHTML = '<span class="material-symbols-outlined replay">replay</span>';
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = 'rgb(219, 160, 255)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        drawScore();
+    }
+});

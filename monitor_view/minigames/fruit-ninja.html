@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simriti's Portfolio: Minigame</title>
-    <link href="/stylesheets/monitor-view/minigame.css" type="text/css" rel="stylesheet">
+    <link href="/stylesheets/monitor-view/minigames/fruit-ninja.css" type="text/css" rel="stylesheet">
     <link rel="icon" href="/images/logo.png" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 </head>
@@ -21,7 +21,7 @@
                 <span class="material-symbols-outlined back">arrow_back</span>
               </a>
             </div>
-            <div class="window-header-title">MINIGAME:Fruit Ninja</div>
+            <div class="window-header-title">MINIGAME:FRUIT NINJA</div>
             <div class="window-header-close">
               <a href="/monitor_view/main_menu.html">
                 <span class="material-symbols-outlined close">close</span>
@@ -29,7 +29,11 @@
             </div>
           </div>
           <div class="content">
+            <div id="scoreDisplay">Score: 0</div>
             <canvas id="gameCanvas" width="300" height="300"></canvas>
+            <div class="button">
+              <span id="gameButton" class="material-symbols-outlined play" style="display: inline;">play_arrow</span>
+            </div>
           </div>
         </div>
     </div>
