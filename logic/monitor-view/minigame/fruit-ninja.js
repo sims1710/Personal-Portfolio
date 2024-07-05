@@ -18,6 +18,7 @@ bombImage.src = '/images/bomb.png';
 ctx.fillStyle = 'rgb(241, 218, 255)';
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 
+// Defining the fruit
 class Fruit {
     constructor(x, y, radius, velocityY) {
         this.x = x;
@@ -35,6 +36,7 @@ class Fruit {
     }
 }
 
+// Defining the bomb
 class Bomb {
     constructor(x, y, radius, velocityY) {
         this.x = x;
@@ -52,6 +54,7 @@ class Bomb {
     }
 }
 
+// Function to draw a fruit at a random position and with random speed
 function createFruit() {
     const x = Math.random() * (canvas.width - 50) + 25;
     const radius = 30;
@@ -59,6 +62,7 @@ function createFruit() {
     fruits.push(new Fruit(x, -radius, radius, velocityY));
 }
 
+// Function to draw a bomb at a random position and with random speed
 function createBomb() {
     const x = Math.random() * (canvas.width - 50) + 25;
     const radius = 25;
@@ -66,16 +70,19 @@ function createBomb() {
     bombs.push(new Bomb(x, -radius, radius, velocityY));
 }
 
+// Function to display score
 function drawScore() {
     scoreDisplay.innerText = `Score: ${score}`;
 }
 
+// Function to display game over message
 function drawGameOver() {
     ctx.font = '36px "M PLUS Rounded 1c"';
     ctx.fillStyle = 'red';
     ctx.fillText('Game Over!', canvas.width / 2 - 100, canvas.height / 2);
 }
 
+// Function to update the game
 function updateGame() {
     if (!gameOver) {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -148,7 +155,7 @@ canvas.addEventListener('mousedown', event => {
     }
 });
 
-
+// Function for looping until end of game
 function gameLoop() {
     if (gameRunning) {
         ctx.clearRect(0, 0, canvas.width, canvas.height);

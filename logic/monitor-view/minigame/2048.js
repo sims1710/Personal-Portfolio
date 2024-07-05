@@ -76,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         scoreDisplay.textContent = `Score: ${score}`;
     }
 
+    // Function to colour according to number
     function getTileColor(value) {
         const colors = {
             2: '#d1c4e9',
@@ -93,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return colors[value] || 'rgb(242, 230, 249)';
     }
 
+    // Function for moving the tiles and changing the numbers
     function move(direction) {
         if (gameOver) return;
         let moved = false;
@@ -187,6 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Function for checking if the game is over
     function checkGameOver() {
         let gameIsOver = true;
         for (let i = 0; i < gridSize; i++) {
@@ -211,6 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Function for checking if the game is won
     function checkGameWin() {
         for (let i = 0; i < gridSize; i++) {
             for (let j = 0; j < gridSize; j++) {
@@ -223,6 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Function for restarting the game
     function restartGame() {
         grid = [];
         score = 0;
