@@ -22,8 +22,7 @@ canvas {
 /* Button Styles */
 
 #retryButton {
-    padding: 8px 16px;
-    font-size: 16px;
+    font-size: 16px !important;
     background-color: rgb(219, 160, 255);
     color: rgb(70, 0, 110);
     border: none;
@@ -39,3 +38,6 @@ canvas {
     transition: 0.5s;
 }
 
+.material-symbols-outlined.replay {
+    color: rgb(70, 0, 110);
+}

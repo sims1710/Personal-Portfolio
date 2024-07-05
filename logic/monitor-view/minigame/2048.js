@@ -1,20 +1,39 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const gridContainer = document.getElementById('gridContainer');
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
     const scoreDisplay = document.getElementById('score');
     const gameOverDisplay = document.getElementById('gameOver');
     const restartButton = document.getElementById('restartButton');
     const gridSize = 4;
+    const tileSize = 62; 
+    const gridPadding = 10; 
     let grid = [];
     let score = 0;
     let gameOver = false;
 
+    // Function for displaying game over
+    function drawGameOver() {
+        ctx.font = '48px "M PLUS Rounded 1c"';
+        ctx.fillStyle = 'red';
+        ctx.fillText('Game Over', canvas.width / 2, canvas.height / 2);
+    }
+
+    // Function for displaying congratulations
+    function drawCongratulations() {
+        ctx.font = '36px "M PLUS Rounded 1c"';
+        ctx.fillStyle = 'green';
+        ctx.fillText('Congratulations!', canvas.width / 2, canvas.height / 2);
+    }
+    
+    // Function for initialising the grid
     function initializeGrid() {
         grid = Array.from({ length: gridSize }, () => Array(gridSize).fill(0));
         addRandomTile();
         addRandomTile();
-        updateGridDisplay();
+        updateCanvas();
     }
 
+    // Function for randomly inserting a tile
     function addRandomTile() {
         const availableCells = [];
         for (let i = 0; i < gridSize; i++) {
@@ -30,42 +49,54 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function updateGridDisplay() {
-        gridContainer.innerHTML = '';
+    // Function for updating the canvas
+    function updateCanvas() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = 'rgb(241, 218, 255)'; 
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
         for (let i = 0; i < gridSize; i++) {
             for (let j = 0; j < gridSize; j++) {
                 const tileValue = grid[i][j];
-                const tileDiv = document.createElement('div');
-                tileDiv.classList.add('tile');
-                tileDiv.textContent = tileValue === 0 ? '' : tileValue;
-                tileDiv.style.backgroundColor = getTileColor(tileValue);
-                gridContainer.appendChild(tileDiv);
+                const x = j * (tileSize + gridPadding) + gridPadding;
+                const y = i * (tileSize + gridPadding) + gridPadding;
+                ctx.fillStyle = getTileColor(tileValue);
+                ctx.fillRect(x, y, tileSize, tileSize);
+
+                if (tileValue !== 0) {
+                    ctx.font = 'bold 24px "M PLUS Rounded 1c"';
+                    ctx.fillStyle = '#f0f0f0'; 
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'middle';
+                    ctx.fillText(tileValue, x + tileSize / 2, y + tileSize / 2);
+                }
             }
         }
-        scoreDisplay.textContent = score;
+
+        scoreDisplay.textContent = `Score: ${score}`;
     }
 
     function getTileColor(value) {
         const colors = {
-            2: '#eee4da',
-            4: '#ede0c8',
-            8: '#f2b179',
-            16: '#f59563',
-            32: '#f67c5f',
-            64: '#f65e3b',
-            128: '#edcf72',
-            256: '#edcc61',
-            512: '#edc850',
-            1024: '#edc53f',
-            2048: '#edc22e',
+            2: '#d1c4e9',
+            4: '#b39ddb',
+            8: '#9575cd',
+            16: '#7e57c2',
+            32: '#673ab7',
+            64: '#5e35b1',
+            128: '#512da8',
+            256: '#4527a0',
+            512: '#311b92',
+            1024: '#2a1b5f',
+            2048: '#1a237e',
         };
-        return colors[value] || '#cdc1b4';
+        return colors[value] || 'rgb(242, 230, 249)';
     }
 
     function move(direction) {
         if (gameOver) return;
         let moved = false;
-    
+
         if (direction === 'up') {
             for (let j = 0; j < gridSize; j++) {
                 for (let i = 1; i < gridSize; i++) {
@@ -147,41 +178,53 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         }
-    
+
         if (moved) {
             addRandomTile();
-            updateGridDisplay();
+            updateCanvas();
             checkGameOver();
+            checkGameWin(); 
         }
     }
-    
+
     function checkGameOver() {
-        let gameOver = true;
+        let gameIsOver = true;
         for (let i = 0; i < gridSize; i++) {
             for (let j = 0; j < gridSize; j++) {
                 if (grid[i][j] === 0) {
-                    gameOver = false;
+                    gameIsOver = false;
                     break;
                 }
                 if (j < gridSize - 1 && grid[i][j] === grid[i][j + 1]) {
-                    gameOver = false;
+                    gameIsOver = false;
                     break;
                 }
                 if (i < gridSize - 1 && grid[i][j] === grid[i + 1][j]) {
-                    gameOver = false;
+                    gameIsOver = false;
                     break;
                 }
             }
         }
-        if (gameOver) {
-            gameOverDisplay.style.display = 'block';
+        if (gameIsOver) {
+            drawGameOver();
             gameOver = true;
         }
     }
 
+    function checkGameWin() {
+        for (let i = 0; i < gridSize; i++) {
+            for (let j = 0; j < gridSize; j++) {
+                if (grid[i][j] === 2048) {
+                    drawCongratulations();
+                    gameOver = true;
+                    return;
+                }
+            }
+        }
+    }
+
     function restartGame() {
-        gridContainer.innerHTML = '';
-        gameOverDisplay.style.display = 'none';
+        grid = [];
         score = 0;
         gameOver = false;
         initializeGrid();
@@ -189,6 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     restartButton.addEventListener('click', restartGame);
     initializeGrid();
+
     window.addEventListener('keydown', event => {
         switch (event.key) {
             case 'ArrowUp':
@@ -206,4 +250,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-
