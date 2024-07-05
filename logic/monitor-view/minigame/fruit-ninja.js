@@ -15,7 +15,7 @@ fruitImage.src = '/images/fruit.png';
 const bombImage = new Image();
 bombImage.src = '/images/bomb.png';
 
-ctx.fillStyle = 'rgb(219, 160, 255)';
+ctx.fillStyle = 'rgb(241, 218, 255)';
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 class Fruit {
@@ -80,7 +80,7 @@ function updateGame() {
     if (!gameOver) {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-        ctx.fillStyle = 'rgb(219, 160, 255)';
+        ctx.fillStyle = 'rgb(241, 218, 255)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         fruits.forEach(fruit => {
@@ -179,7 +179,7 @@ gameButton.addEventListener('click', () => {
         bombs.length = 0;
         gameButton.innerHTML = '<span class="material-symbols-outlined replay">replay</span>';
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.fillStyle = 'rgb(219, 160, 255)';
+        ctx.fillStyle = 'rgb(241, 218, 255)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         drawScore();
     }

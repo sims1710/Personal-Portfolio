@@ -1,0 +1,8 @@
+@import url(/stylesheets/monitor-view/minigame.css);
+@import url(/stylesheets/monitor-view/minigames/pong.css);
+
+/* Content Style */
+
+.content {
+    margin-top: 4.5vh;
+}
